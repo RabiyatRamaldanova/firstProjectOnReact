@@ -6,32 +6,35 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import React, {Component} from 'react';
 import {Button, Text, View} from "react-native";
-const App = () => {
-  return (
+//const App = () => {
+  class App extends Component { 
+    render(){
+    return (
     <View style={styles.container}>
 
     <Text style = {styles.welcome}>
       Hello!
       </Text>
     </View>
-  );
+ );}
+   
 
- 
-}
- let styles ={
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#FFCCCC'
-  },
-    welcome : {
-      fontSize: 20,
-      textAlign: 'center',
-      margin: 10 
-    }
   }
 
+  let  styles = {
+    container: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: '#FFCCCC'
+    },
+      welcome : {
+        fontSize: 20,
+        textAlign: 'center',
+        margin: 10 
+      }
+    }
 export default App;
+ 
